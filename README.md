@@ -1,1 +1,1 @@
-# HyprSetup
+# HyprSetup for Arch
