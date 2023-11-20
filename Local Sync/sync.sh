@@ -3,7 +3,7 @@
 
 rsync ~/.config/hypr/hyprland.conf /HDD1/HyprSetupArch/hypr/hyprland.conf
 rsync -r --del ~/Pictures/Wallpapers /HDD1/HyprSetupArch/Wallpapers/
-rsync ~/.config/WallpaperSelect/wallpaper.txt /HDD1/HyprSetupArch/WallpaperSelect/wallpaper.txt
+rsync ~/.config/WallpaperSelect/wallpaper.txt /HDD1/HyprSetupArch/WallpaperSelect/
 
 zip -FS /HDD1/HyprSetupArch/Wallpapers/wallpapers.zip /HDD1/HyprSetupArch/Wallpapers/Wallpapers/*
 
