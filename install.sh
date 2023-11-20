@@ -7,8 +7,8 @@ mkdir ~/Pictures/Wallpapers/
 cd ~/Downloads/ && wget https://github.com/Mato1111/HyprSetupArch/raw/main/Wallpapers/wallpapers978543.zip
 unzip ~/Downloads/wallpapers978543.zip
 
-yay -R xdg-desktop-portal-kde xdg-desktop-portal-wlr xdg-desktop-portal-dde xdg-desktop-portal-gtk xdg-desktop-portal-lxqt xdg-desktop-portal-xapp xdg-desktop-portal-gnome xdg-desktop-portal-hyprland xdg-desktop-portal-wlr-git 
-yay -S hyprland-git xdg-desktop-portal-hyprland-git wget waybar-hyprland dunst copyq python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
+yay -R xdg-desktop-portal-kde xdg-desktop-portal-wlr xdg-desktop-portal-dde xdg-desktop-portal-gtk xdg-desktop-portal-lxqt xdg-desktop-portal-xapp xdg-desktop-portal-gnome xdg-desktop-portal-hyprland xdg-desktop-portal-wlr-git xdg-desktop-portal-td xdg-desktop-portal-git xdg-desktop-portal-rs xdg-desktop-portal-shana xdg-desktop-portal-termfilechooser-git xdg-desktop-portal-kde-git xdg-desktop-portal-gtk-git xdg-desktop-portal-luminous-git xdg-desktop-portal-liri-git xdg-desktop-portal-lxqt-git xdg-desktop-portal-gnome-noprompt-git xdg-desktop-portal-gnome-git xdg-desktop-portal-pantheon-git 
+yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland-git wget waybar-hyprland dunst copyq python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
 Hyprland & waypaper & kvantummanager & qt5ct & waybar &
 sleep 4
 killall Hyprland waypaper kvantummanager qt5ct waybar
