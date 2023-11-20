@@ -7,12 +7,14 @@ mkdir ~/Pictures/Wallpapers/
 cd ~/Pictures/Wallpapers/ && wget https://github.com/Mato1111/HyprSetupArch/raw/main/Wallpapers/wallpapers.zip
 
 yay -S hyprland-git wget waybar-hyprland dunst copyq python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
-Hyprland & waypaper & kvantummanager & qt5ct &
+Hyprland & waypaper & kvantummanager & qt5ct & waybar &
 sleep 4
-killall Hyprland waypaper kvantummanager qt5ct
+killall Hyprland waypaper kvantummanager qt5ct waybar
 
 cd ~/.config/hypr/ && rm hyprland.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/hypr/hyprland.conf
 cd ~/.config/~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waypaper/config.ini
+cd ~/.config/waybar/ && rm config.jsonc && wget https://github.com/Mato1111/HyprSetupArch/raw/main/waybar/config.jsonc
+cd ~/.config/waybar/ && rm style.css && wget https://github.com/Mato1111/HyprSetupArch/raw/main/waybar/style.css
 
 cd ~/ && wget https://raw.githubusercontent.com/vinceliuice/Layan-kde/master/install.sh && bash install.sh && rm install.sh
 gsettings set org.gnome.desktop.interface gtk-theme "Layan-Dark"
