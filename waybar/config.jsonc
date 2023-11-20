@@ -85,7 +85,6 @@
         "on-click-right": "killall nvtop"
     },
     "custom/spotify": {
-
         "escape": true,
         "exec": "/bin/python ~/.config/system_scripts/mediaplayer.py --player spotify",
         "format": " {}",
