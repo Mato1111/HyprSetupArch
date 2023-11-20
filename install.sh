@@ -1,20 +1,17 @@
 #!/bin/bash
 # -*- coding: utf-8 -*-
-echo "Make sure yay is installed before running! Kill the script if it isn't."
-sleep 4
+echo "Make sure yay is installed before running! Kill the script if it isn't." & sleep 6
 
-mkdir ~/Pictures/Wallpapers/
-cd ~/Downloads/ && wget https://github.com/Mato1111/HyprSetupArch/raw/main/Wallpapers/wallpapers978543.zip
-unzip ~/Downloads/wallpapers978543.zip
+cd ~/Downloads/ && wget https://github.com/Mato1111/HyprSetupArch/raw/main/Wallpapers/wallpapers978543.zip && unzip ~/Downloads/wallpapers978543.zip && mv ~/Downloads/HDD1/HyprSetupArch/Wallpapers/Wallpapers ~/Pictures/ && rm -rf ~/Downloads/HDD1/ && rm ~/Downloads/wallpapers978543.zip 
 
-yay -R xdg-desktop-portal-kde xdg-desktop-portal-wlr xdg-desktop-portal-dde xdg-desktop-portal-gtk xdg-desktop-portal-lxqt xdg-desktop-portal-xapp xdg-desktop-portal-gnome xdg-desktop-portal-hyprland xdg-desktop-portal-wlr-git xdg-desktop-portal-td xdg-desktop-portal-git xdg-desktop-portal-rs xdg-desktop-portal-shana xdg-desktop-portal-termfilechooser-git xdg-desktop-portal-kde-git xdg-desktop-portal-gtk-git xdg-desktop-portal-luminous-git xdg-desktop-portal-liri-git xdg-desktop-portal-lxqt-git xdg-desktop-portal-gnome-noprompt-git xdg-desktop-portal-gnome-git xdg-desktop-portal-pantheon-git 
+yay -R xdg-desktop-portal-kde xdg-desktop-portal-wlr xdg-desktop-portal-dde xdg-desktop-portal-gtk xdg-desktop-portal-lxqt xdg-desktop-portal-xapp xdg-desktop-portal-gnome xdg-desktop-portal-hyprland xdg-desktop-portal-wlr-git xdg-desktop-portal-td xdg-desktop-portal-git xdg-desktop-portal-rs xdg-desktop-portal-shana xdg-desktop-portal-termfilechooser-git xdg-desktop-portal-kde-git xdg-desktop-portal-gtk-git xdg-desktop-portal-luminous-git xdg-desktop-portal-liri-git xdg-desktop-portal-lxqt-git xdg-desktop-portal-gnome-noprompt-git xdg-desktop-portal-gnome-git xdg-desktop-portal-pantheon-git --noconfirm
 yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland-git wget waybar-hyprland dunst copyq python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
 Hyprland & waypaper & kvantummanager & qt5ct & waybar &
-sleep 4
+sleep 3.5
 killall Hyprland waypaper kvantummanager qt5ct waybar
 
 cd ~/.config/hypr/ && rm hyprland.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/hypr/hyprland.conf
-cd ~/.config/~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waypaper/config.ini
+cd ~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waypaper/config.ini
 cd ~/.config/waybar/ && rm config.jsonc && wget https://github.com/Mato1111/HyprSetupArch/raw/main/waybar/config.jsonc
 cd ~/.config/waybar/ && rm style.css && wget https://github.com/Mato1111/HyprSetupArch/raw/main/waybar/style.css
 
@@ -28,3 +25,6 @@ cd ~/Downloads/WPSInstall/ && wget https://raw.githubusercontent.com/Mato1111/Wa
 bash ~/Downloads/WPSInstall/install.sh
 bash ~/Downloads/WPSInstall/add-to-apps.sh
 cd ~/.config/WallpaperSelect/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/WallpaperSelect/wallpaper.txt
+rm -rf ~/Downloads/WPSInstall/
+
+echo "Install complete."
