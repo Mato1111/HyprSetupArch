@@ -117,8 +117,6 @@
     "custom/wallpaper":{
         "format":" ",
         "on-click": "python ~/.config/WallpaperSelect/WallpaperSelect.py",
-        "on-scroll-down": "python ~/.config/waybar/wallpaper2.py",
-        "on-scroll-up": "python ~/.config/waybar/wallpaper3.py",
         "on-click-right": "killall waybar && waybar"
     }
 }
