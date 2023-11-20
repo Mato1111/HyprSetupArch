@@ -18,8 +18,10 @@ yay -S hyprland-git waybar-hyprland dunst copyq python python-pyqt5 ffmpeg linux
 
 cd ~/ && wget https://raw.githubusercontent.com/vinceliuice/Layan-kde/master/install.sh && bash install.sh
 
-cd ~/Downloads && wget https://raw.githubusercontent.com/Mato1111/WallpaperEngine-Waypaper-Selector/main/add-to-apps.sh & wget https://raw.githubusercontent.com/Mato1111/WallpaperEngine-Waypaper-Selector/main/install.sh
-bash 
+mkdir ~/Downloads/WPSInstall/
+cd ~/Downloads/WPSInstall/ && wget https://raw.githubusercontent.com/Mato1111/WallpaperEngine-Waypaper-Selector/main/add-to-apps.sh & wget https://raw.githubusercontent.com/Mato1111/WallpaperEngine-Waypaper-Selector/main/install.sh
+bash ~/Downloads/WPSInstall/install.sh
+bash ~/Downloads/WPSInstall/add-to-apps.sh
 
 gsettings set org.gnome.desktop.interface gtk-theme "Layan-Dark"
 kvantummanager
