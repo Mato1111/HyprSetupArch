@@ -9,6 +9,7 @@ rsync ~/.config/Kvantum/kvantum.kvconfig /HDD1/HyprSetupArch/Theme/Kvantum/kvant
 rsync ~/.config/waybar/config.jsonc /HDD1/HyprSetupArch/waybar/config.jsonc &
 rsync ~/.config/waybar/style.css /HDD1/HyprSetupArch/waybar/style.css &
 rsync ~/.config/btop/btop.conf /HDD1/HyprSetupArch/top/btop.conf
+rsync ~/.config/micro/settings.json /HDD1/HyprSetupArch/top/settings.json
 
 # Wallpapers
 rsync -r --del ~/Pictures/Wallpapers /HDD1/HyprSetupArch/Wallpapers/

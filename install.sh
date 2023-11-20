@@ -12,9 +12,9 @@ yay -R xdg-desktop-portal-kde xdg-desktop-portal-wlr xdg-desktop-portal-dde xdg-
 yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland-git wget kitty micro waybar-hyprland dunst fuzzel copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
 
 # Run then kill the main programs to gen the ~/.config/folders and configs (No idea if this is actually needed)
-Hyprland & waypaper & kvantummanager & qt5ct & waybar & kitty --override close_on_child_death=on btop &
+Hyprland & waypaper & kvantummanager & qt5ct & waybar & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & 
 sleep 3.5
-killall Hyprland waypaper kvantummanager qt5ct waybar btop
+killall Hyprland waypaper kvantummanager qt5ct waybar btop micro
 
 # Replace configs
 mkdir ~/.config/system_scripts/
@@ -24,6 +24,7 @@ cd ~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.co
 cd ~/.config/waybar/ && rm config.jsonc && wget https://github.com/Mato1111/HyprSetupArch/raw/main/waybar/config.jsonc
 cd ~/.config/waybar/ && rm style.css && wget https://github.com/Mato1111/HyprSetupArch/raw/main/waybar/style.css
 cd ~/.config/btop/ && rm btop.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/btop.conf
+cd ~/.config/micro && rm settings.json && wget 
 
 # Theming
 cd ~/ && wget https://raw.githubusercontent.com/vinceliuice/Layan-kde/master/install.sh && bash install.sh && rm install.sh
