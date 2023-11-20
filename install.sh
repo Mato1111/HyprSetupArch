@@ -13,10 +13,10 @@ mkdir ~/.config/waypaper/
 cd ~/.config/~/.config/waypaper/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waypaper/config.ini
 
 mkdir ~/.config/Kvantum/
-cd ~/.config/Kvantum/ && 
+cd ~/.config/Kvantum/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/Kvantum/kvantum.kvconfig
 
 mkdir ~/.config/qt5ct/
-cd ~/.config/qt5ct/ && wget 
+cd ~/.config/qt5ct/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/qt5ct/qt5ct.conf
 
 yay -S hyprland-git waybar-hyprland-git dunst copyq python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git --noconfirm
 
