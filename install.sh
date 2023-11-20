@@ -1,13 +1,13 @@
 #!/bin/bash
 # -*- coding: utf-8 -*-
-echo "Make sure yay is installed before running!! Kill the script if it isn't."
+echo "Make sure yay is installed before running! Kill the script if it isn't."
 sleep 4
 
 mkdir ~/Pictures/Wallpapers/
 cd ~/Pictures/Wallpapers/ && wget https://github.com/Mato1111/HyprSetupArch/raw/main/Wallpapers/wallpapers.zip
 
-yay -S hyprland-git wget waybar-hyprland-git dunst copyq python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
-Hyprland & waypaper & kvantummanager & qt5ct
+yay -S hyprland-git wget waybar-hyprland dunst copyq python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
+Hyprland & waypaper & kvantummanager & qt5ct &
 sleep 4
 killall Hyprland waypaper kvantummanager qt5ct
 
