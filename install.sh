@@ -17,4 +17,3 @@ cd ~/ && wget https://raw.githubusercontent.com/vinceliuice/Layan-kde/master/ins
 gsettings set org.gnome.desktop.interface gtk-theme "Layan-Dark"
 kvantummanager
 qt5ct
-
