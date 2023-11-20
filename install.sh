@@ -18,7 +18,7 @@ killall Hyprland waypaper kvantummanager qt5ct waybar btop
 
 # Replace configs
 mkdir ~/.config/system_scripts/
-cd ~/.config/btop/ && wget 
+cd ~/.config/btop/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/btop.conf
 cd ~/.config/system_scripts/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/system_scripts/mediaplayer.py
 cd ~/.config/hypr/ && rm hyprland.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/hypr/hyprland.conf
 cd ~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waypaper/config.ini
