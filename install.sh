@@ -24,7 +24,7 @@ cd ~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.co
 cd ~/.config/waybar/ && rm config.jsonc && wget https://github.com/Mato1111/HyprSetupArch/raw/main/waybar/config.jsonc
 cd ~/.config/waybar/ && rm style.css && wget https://github.com/Mato1111/HyprSetupArch/raw/main/waybar/style.css
 cd ~/.config/btop/ && rm btop.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/btop.conf
-cd ~/.config/micro && rm settings.json && wget 
+cd ~/.config/micro && rm settings.json && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/settings.json
 
 # Theming
 cd ~/ && wget https://raw.githubusercontent.com/vinceliuice/Layan-kde/master/install.sh && bash install.sh && rm install.sh
