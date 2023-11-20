@@ -87,7 +87,7 @@
     "custom/spotify": {
 
         "escape": true,
-        "exec": "/bin/python /home/mato/.config/system_scripts/mediaplayer.py --player spotify",
+        "exec": "/bin/python ~/.config/system_scripts/mediaplayer.py --player spotify",
         "format": " {}",
         "return-type": "json",
         "max-length": 45,
