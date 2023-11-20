@@ -8,6 +8,9 @@ cd ~/.config/hypr/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupA
 cd ~
 
 mkdir ~/Pictures/Wallpapers/
+cd ~/Pictures/Wallpapers/ 
+
+
 mkdir ~/.config/waypaper/
 cd ~/.config/~/.config/waypaper/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waypaper/config.ini
 
