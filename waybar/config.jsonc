@@ -1,0 +1,124 @@
+{
+	"layer": "top",
+	"modules-left": ["custom/launcher","cpu","memory","custom/spotify"],
+	"modules-center": ["hyprland/window"],
+	"modules-right": ["tray","pulseaudio","clock","custom/wallpaper"],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 2,
+		"format": "{icon} {volume}%",
+		"format-muted": " {volume}%",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+
+    "cava": {
+        "framerate": 45,
+        "autosens": 0,
+        "sensitivity": 9,
+        "bars": 8,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pulse",
+        "source": "spotify",
+        "stereo": false,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
+    },
+
+    "river/tags": {
+		"num-tags": 6
+    },
+	"network": {
+		"tooltip": false,
+		"format-wifi": "  {essid}",
+		"format-ethernet": ""
+	},
+	"backlight": {
+		"tooltip": false,
+		"format": " {}%",
+		"interval":1,
+        "on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5"
+	},
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+    "clock": {
+        "format": "{: %I:%M %p  %m/%d/%Y}",
+        "on-click": "merkuro-calendar",
+        "on-click-right": "killall merkuro-calendar"
+    },
+    "cpu": {
+        "interval": 10,
+        "format": " {usage}%",
+        "max-length": 10,
+        "on-click": "kitty --override close_on_child_death=on btop",
+        "on-click-right": "killall btop"
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10,
+        "on-click": "kitty --override close_on_child_death=on nvtop",
+        "on-click-right": "killall nvtop"
+    },
+    "custom/spotify": {
+
+        "escape": true,
+        "exec": "/bin/python /home/mato/.config/system_scripts/mediaplayer.py --player spotify",
+        "format": " {}",
+        "return-type": "json",
+        "max-length": 45,
+        "on-click": "playerctl -p spotify play-pause",
+        "on-scroll-up": "playerctl -p spotify next",
+        "on-scroll-down": "playerctl -p spotify previous"
+    },
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi"
+    },
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "custom/power":{
+        "format": " ",
+        "on-click": "bash ~/.config/rofi/leave/leave.sh"
+    },
+    "custom/updates":{
+        "format": "{} Update(s)",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "interval": 15,
+        "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
+    },
+    "custom/wallpaper":{
+        "format":" ",
+        "on-click": "python ~/.config/WallpaperSelect/WallpaperSelect.py",
+        "on-scroll-down": "python ~/.config/waybar/wallpaper2.py",
+        "on-scroll-up": "python ~/.config/waybar/wallpaper3.py",
+        "on-click-right": "killall waybar && waybar"
+    }
+}
