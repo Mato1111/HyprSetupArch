@@ -90,4 +90,4 @@ bash ~/Downloads/WPSInstall/add-to-apps.sh
 cd ~/.config/WallpaperSelect/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/WallpaperSelect/wallpaper.txt
 rm -rf ~/Downloads/WPSInstall/
 
-echo "Install complete."
+echo "Install complete. You may now login to Hyprland."
