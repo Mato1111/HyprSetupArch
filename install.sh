@@ -22,6 +22,7 @@ mkdir ~/.config/waybar/
 cd ~/.config/system_scripts/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/system_scripts/mediaplayer.py
 cd ~/.config/hypr/ && rm hyprland.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/hypr/hyprland.conf
 cd ~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waypaper/config.ini
+cd ~/.config/kitty/ && rm kitty.conf && wget 
 
 cd ~/.config/waybar/ && rm config.jsonc && sleep 2 
 cd ~/.config/waybar/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waybar/config.jsonc
