@@ -22,9 +22,9 @@ yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland fish starship
 # Configs
 
 # Run then kill the main programs to gen the ~/.config/folders and configs (No idea if this is actually needed)
-Hyprland & waypaper & kvantummanager & qt5ct & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & 
+Hyprland & waypaper & kvantummanager & qt5ct & dunst & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & 
 sleep 3.5
-killall Hyprland waypaper kvantummanager qt5ct waybar btop micro
+killall Hyprland waypaper kvantummanager qt5ct waybar btop micro dunst
 
 
 # Make dirs
@@ -56,6 +56,10 @@ cd ~/.config/waybar/ && rm config.jsonc && sleep 1
 cd ~/.config/waybar/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waybar/config.jsonc
 cd ~/.config/waybar/ && rm style.css && sleep 1
 cd ~/.config/waybar/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waybar/style.css
+
+# Dunst
+cd ~/.config/dunst/ && rm dunstrc && sleep 1
+cd ~/.config/dunst/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/dunstrc
 
 # btop
 cd ~/.config/btop/ && rm btop.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/btop.conf
