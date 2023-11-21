@@ -12,7 +12,8 @@ rsync ~/.config/btop/btop.conf /HDD1/HyprSetupArch/top/btop.conf &
 rsync ~/.config/micro/settings.json /HDD1/HyprSetupArch/top/settings.json &
 rsync ~/.config/kitty/kitty.conf /HDD1/HyprSetupArch/top/kitty.conf &
 rsync ~/.config/starship.toml /HDD1/HyprSetupArch/top/starship.toml &
-rsync ~/.config/fish/config.fish /HDD1/HyprSetupArch/top/config.fish
+rsync ~/.config/fish/config.fish /HDD1/HyprSetupArch/top/config.fish &
+rsync ~/.config/dunst/dunstrc /HDD1/HyprSetupArch/top/dunstrc
 
 
 # Wallpapers
