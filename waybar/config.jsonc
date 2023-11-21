@@ -97,7 +97,7 @@
     },
     "custom/launcher":{
         "format": " ",
-        "on-click": "fuzzel --icon-theme=kora", 
+        "on-click": "fuzzel --icon-theme=kora --background=161320ff --text-color=e1cdf2ff", 
         "on-click-right": "killall fuzzel"
     },
     "hyprland/window": {
