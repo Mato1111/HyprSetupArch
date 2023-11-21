@@ -1,6 +1,10 @@
 #!/bin/bash
 # -*- coding: utf-8 -*-
 
+# Wallpapers
+rsync -r --del ~/Pictures/Wallpapers /HDD1/HyprSetupArch/Wallpapers/
+zip -FS /HDD1/HyprSetupArch/Wallpapers/wallpapers978543.zip /HDD1/HyprSetupArch/Wallpapers/Wallpapers/*
+
 # Configs
 rsync ~/.config/hypr/hyprland.conf /HDD1/HyprSetupArch/hypr/hyprland.conf &
 rsync ~/.config/WallpaperSelect/wallpaper.txt /HDD1/HyprSetupArch/WallpaperSelect/wallpaper.txt &
@@ -15,10 +19,5 @@ rsync ~/.config/starship.toml /HDD1/HyprSetupArch/top/starship.toml &
 rsync ~/.config/fish/config.fish /HDD1/HyprSetupArch/top/config.fish &
 rsync ~/.config/dunst/dunstrc /HDD1/HyprSetupArch/top/dunstrc
 
-
-# Wallpapers
-rsync -r --del ~/Pictures/Wallpapers /HDD1/HyprSetupArch/Wallpapers/
-zip -FS /HDD1/HyprSetupArch/Wallpapers/wallpapers978543.zip /HDD1/HyprSetupArch/Wallpapers/Wallpapers/*
-
-# Commit aks Push
+# Commit and Push
 cd /HDD1/HyprSetupArch/ && git commit -m "sync" -a && git push
