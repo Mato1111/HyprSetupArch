@@ -19,26 +19,28 @@ killall Hyprland waypaper kvantummanager qt5ct waybar btop micro
 # Replace configs
 mkdir ~/.config/system_scripts/
 mkdir ~/.config/waybar/
+mkdir ~/.config/micro/colorschemes/
 cd ~/.config/system_scripts/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/system_scripts/mediaplayer.py
 cd ~/.config/hypr/ && rm hyprland.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/hypr/hyprland.conf
 cd ~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waypaper/config.ini
-cd ~/.config/kitty/ && rm kitty.conf && wget 
+cd ~/.config/kitty/ && rm kitty.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/kitty.conf
 
-cd ~/.config/waybar/ && rm config.jsonc && sleep 2 
+cd ~/.config/waybar/ && rm config.jsonc && sleep 1 
 cd ~/.config/waybar/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waybar/config.jsonc
-cd ~/.config/waybar/ && rm style.css && sleep 2
+cd ~/.config/waybar/ && rm style.css && sleep 1
 cd ~/.config/waybar/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waybar/style.css
 
 cd ~/.config/btop/ && rm btop.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/btop.conf
+cd ~/.config/micro/colorschemes/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/micro/monokaiBlur.micro
 cd ~/.config/micro && rm settings.json && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/settings.json
 
 # Theming
 cd ~/ && wget https://raw.githubusercontent.com/vinceliuice/Layan-kde/master/install.sh && bash install.sh && rm install.sh
 gsettings set org.gnome.desktop.interface gtk-theme "Layan-Dark"
 
-cd ~/.config/Kvantum/ && rm kvantum.kvconfig && sleep 2
+cd ~/.config/Kvantum/ && rm kvantum.kvconfig && sleep 1
 cd ~/.config/Kvantum/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/Kvantum/kvantum.kvconfig
-cd ~/.config/qt5ct/ && rm qt5ct.conf && sleep 2
+cd ~/.config/qt5ct/ && rm qt5ct.conf && sleep 1
 cd ~/.config/qt5ct/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/qt5ct/qt5ct.conf
 
 # Wallpaper Selector
