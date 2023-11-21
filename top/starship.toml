@@ -1,0 +1,9 @@
+#[line_break]
+#disabled = true
+
+#[character]
+#success_symbol = "[->](bold green)"
+
+format = '''
+[╭──>](bold green)$directory$rust$package
+[╰>](bold green) '''

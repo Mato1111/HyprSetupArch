@@ -9,7 +9,7 @@ cd ~/Downloads/ && wget https://github.com/Mato1111/HyprSetupArch/raw/main/Wallp
 yay -R xdg-desktop-portal-kde xdg-desktop-portal-wlr xdg-desktop-portal-dde xdg-desktop-portal-gtk xdg-desktop-portal-lxqt xdg-desktop-portal-xapp xdg-desktop-portal-gnome xdg-desktop-portal-hyprland xdg-desktop-portal-wlr-git xdg-desktop-portal-td xdg-desktop-portal-git xdg-desktop-portal-rs xdg-desktop-portal-shana xdg-desktop-portal-termfilechooser-git xdg-desktop-portal-kde-git xdg-desktop-portal-gtk-git xdg-desktop-portal-luminous-git xdg-desktop-portal-liri-git xdg-desktop-portal-lxqt-git xdg-desktop-portal-gnome-noprompt-git xdg-desktop-portal-gnome-git xdg-desktop-portal-pantheon-git --noconfirm
 
 # Install packages
-yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland wget kitty micro waybar dunst ttf-font-awesome ttf-jetbrains-mono-nerd fuzzel wlogout copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
+yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland fish starship wget kitty micro waybar dunst ttf-font-awesome ttf-jetbrains-mono-nerd fuzzel wlogout copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
 
 # Run then kill the main programs to gen the ~/.config/folders and configs (No idea if this is actually needed)
 Hyprland & waypaper & kvantummanager & qt5ct & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & 
@@ -24,6 +24,8 @@ cd ~/.config/system_scripts/ && wget https://raw.githubusercontent.com/Mato1111/
 cd ~/.config/hypr/ && rm hyprland.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/hypr/hyprland.conf
 cd ~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waypaper/config.ini
 cd ~/.config/kitty/ && rm kitty.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/kitty.conf
+cd ~/.config/ && rm ~/.config/starship.toml && sleep 1
+cd ~/.config/ && wget 
 
 cd ~/.config/waybar/ && rm config.jsonc && sleep 1 
 cd ~/.config/waybar/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waybar/config.jsonc
@@ -42,6 +44,7 @@ cd ~/.config/Kvantum/ && rm kvantum.kvconfig && sleep 1
 cd ~/.config/Kvantum/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/Kvantum/kvantum.kvconfig
 cd ~/.config/qt5ct/ && rm qt5ct.conf && sleep 1
 cd ~/.config/qt5ct/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/qt5ct/qt5ct.conf
+chsh -s $(which fish)
 
 # Wallpaper Selector
 mkdir ~/Downloads/WPSInstall/
