@@ -1,6 +1,6 @@
 #!/bin/bash
 # -*- coding: utf-8 -*-
-echo "Make sure yay is installed before running! Kill the script if it isn't." & sleep 6
+echo "Make sure yay is installed before running! Kill the script if it isn't." && echo "Do not run the script from within Hyprland." & sleep 10
 
 ########################
 
