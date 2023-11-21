@@ -89,7 +89,7 @@
         "on-click": "bash ~/.config/rofi/leave/leave.sh"
     },
     "custom/updates":{
-        "format": " {}",
+        "format": " {}",
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 15,
