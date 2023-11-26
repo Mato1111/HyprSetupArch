@@ -1,6 +1,6 @@
 #!/bin/bash
 # -*- coding: utf-8 -*-
-echo "Make sure yay is installed before running! Kill the script if it isn't." && echo "Do not run the script from within Hyprland." & sleep 10
+echo "Make sure yay is installed before running! Kill the script if it isn't." && echo "Do not run the script from within Hyprland or Kitty." & sleep 10
 
 ########################
 
@@ -22,9 +22,9 @@ yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin fis
 # Configs
 
 # Run then kill the main programs to gen the ~/.config/folders and configs (No idea if this is actually needed)
-Hyprland & waypaper & kvantummanager & qt5ct & dunst & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & 
+Hyprland & waypaper & kvantummanager & qt5ct & dunst & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & kitty --override close_on_child_death=on fish & kitty & 
 sleep 3.5
-killall Hyprland waypaper kvantummanager qt5ct waybar btop micro dunst
+killall Hyprland waypaper kvantummanager qt5ct waybar btop micro dunst kitty 
 
 
 # Make dirs
@@ -47,6 +47,9 @@ cd ~/.config/kitty/ && rm kitty.conf && wget https://raw.githubusercontent.com/M
 # Fish
 cd ~/.config/fish/ && rm config.fish && sleep 1
 cd ~/.config/fish/ && https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/config.fish
+kitty --override close_on_child_death=on fish &
+sleep 1
+killall kitty
 # Starship (Fish Customization)
 cd ~/.config/ && rm ~/.config/starship.toml && sleep 1
 cd ~/.config/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/starship.toml
@@ -71,13 +74,13 @@ cd ~/.config/micro && rm settings.json && wget https://raw.githubusercontent.com
 ########################
 
 # Theming
-cd ~/ && wget https://raw.githubusercontent.com/vinceliuice/Layan-kde/master/install.sh && bash install.sh && rm install.sh
-gsettings set org.gnome.desktop.interface gtk-theme "Layan-Dark"
+# cd ~/ && wget https://raw.githubusercontent.com/vinceliuice/Layan-kde/master/install.sh && bash install.sh && rm install.sh
+# gsettings set org.gnome.desktop.interface gtk-theme "Layan-Dark"
 
-cd ~/.config/Kvantum/ && rm kvantum.kvconfig && sleep 1
-cd ~/.config/Kvantum/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/Kvantum/kvantum.kvconfig
-cd ~/.config/qt5ct/ && rm qt5ct.conf && sleep 1
-cd ~/.config/qt5ct/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/qt5ct/qt5ct.conf
+# cd ~/.config/Kvantum/ && rm kvantum.kvconfig && sleep 1
+# cd ~/.config/Kvantum/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/Kvantum/kvantum.kvconfig
+# cd ~/.config/qt5ct/ && rm qt5ct.conf && sleep 1
+# cd ~/.config/qt5ct/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/qt5ct/qt5ct.conf
 chsh -s $(which fish)
 
 ########################
