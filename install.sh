@@ -82,6 +82,8 @@ cd ~/.config/micro && rm settings.json && wget https://raw.githubusercontent.com
 # cd ~/.config/Kvantum/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/Kvantum/kvantum.kvconfig
 # cd ~/.config/qt5ct/ && rm qt5ct.conf && sleep 1
 # cd ~/.config/qt5ct/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/qt5ct/qt5ct.conf
+
+# Change Shell
 chsh -s $(which fish)
 
 ########################
