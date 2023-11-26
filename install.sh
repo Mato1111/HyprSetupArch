@@ -95,4 +95,4 @@ rm -rf ~/Downloads/WPSInstall/
 
 
 echo "
-Install complete. Please apply themes from Plasma with qt5ct, qt6ct, nwg-look, kvantum, and KDE settings. Add ttf-jetbrains-mono-nerd to the ignore list."
+Install complete. Please apply themes from Plasma with qt5ct, qt6ct, nwg-look, kvantum, and KDE settings. Add ttf-jetbrains-mono-nerd to the ignore list before updating."
