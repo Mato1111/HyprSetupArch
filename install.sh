@@ -87,7 +87,7 @@ chsh -s $(which fish)
 ########################
 
 # Wallpaper Selector
-mkdir ~/Downloads/WPSInstall/
+mkdir ~/Downloads/WPSInstall/ && sleep 4
 cd ~/Downloads/WPSInstall/ && wget https://raw.githubusercontent.com/Mato1111/WallpaperEngine-Waypaper-Selector/main/add-to-apps.sh & wget https://raw.githubusercontent.com/Mato1111/WallpaperEngine-Waypaper-Selector/main/install.sh
 bash ~/Downloads/WPSInstall/install.sh
 bash ~/Downloads/WPSInstall/add-to-apps.sh
@@ -96,4 +96,7 @@ rm -rf ~/Downloads/WPSInstall/
 
 
 echo "
-Install complete. Please apply themes from Plasma with qt5ct, qt6ct, nwg-look, kvantum, and KDE settings. Add ttf-jetbrains-mono-nerd to the ignore list before updating."
+
+Install complete. Please apply themes from Plasma with qt5ct, qt6ct, nwg-look, kvantum, and KDE settings. 
+
+Add ttf-jetbrains-mono-nerd to the ignore list before updating."
