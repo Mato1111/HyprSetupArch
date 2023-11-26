@@ -44,10 +44,11 @@ cd ~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.co
 # Kitty
 cd ~/.config/kitty/ && rm kitty.conf && sleep 1
 cd ~/.config/kitty/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/kitty.conf
+cd ~/.config/kitty/ && wget 
 
 # Fish
 cd ~/.config/fish/ && rm config.fish && sleep 1
-cd ~/.config/fish/ && https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/config.fish
+cd ~/.config/fish/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/config.fish
 kitty --override close_on_child_death=on fish &
 sleep 1
 killall kitty
