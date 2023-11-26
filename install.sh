@@ -44,7 +44,7 @@ cd ~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.co
 # Kitty
 cd ~/.config/kitty/ && rm kitty.conf && sleep 1
 cd ~/.config/kitty/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/kitty.conf
-cd ~/.config/kitty/ && wget 
+cd ~/.config/kitty/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/current-theme.conf
 
 # Fish
 cd ~/.config/fish/ && rm config.fish && sleep 1
