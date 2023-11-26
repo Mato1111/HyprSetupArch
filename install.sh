@@ -15,7 +15,7 @@ yay -R xdg-desktop-portal-kde xdg-desktop-portal-wlr xdg-desktop-portal-dde xdg-
 ########################
 
 # Install packages
-yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin playerctl fish starship wget kitty kbd micro hyprshot waybar dunst ttf-font-awesome ttf-jetbrains-mono-nerd-3.0.2-1 fuzzel wlogout copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
+yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin playerctl fish starship wget kitty kbd micro hyprshot waybar dunst ttf-font-awesome ttf-jetbrains-mono-nerd fuzzel wlogout copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
 
 ########################
 
@@ -103,8 +103,5 @@ sleep 2
 rm -rf ~/Downloads/WPSInstall/
 
 
-echo "
-
-Install complete. Please apply themes from Plasma with qt5ct, qt6ct, nwg-look, kvantum, and KDE settings. 
-
-Add ttf-jetbrains-mono-nerd to the ignore list before updating."
+echo " "
+echo "Install complete. Please apply themes from Plasma with qt5ct, qt6ct, nwg-look, kvantum, and KDE settings. "
