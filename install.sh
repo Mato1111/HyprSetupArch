@@ -24,7 +24,7 @@ yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin fis
 # Run then kill the main programs to gen the ~/.config/folders and configs (No idea if this is actually needed)
 Hyprland & waypaper & kvantummanager & qt5ct & qt6ct & nwg-look & dunst & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & kitty --override close_on_child_death=on fish & kitty & 
 sleep 3.5
-killall Hyprland waypaper kvantummanager qt5ct waybar btop micro dunst kitty 
+killall Hyprland waypaper kvantummanager qt5ct qt6ct nwg-look waybar btop micro dunst kitty 
 
 
 # Make dirs
@@ -42,7 +42,8 @@ cd ~/.config/hypr/ && rm hyprland.conf && wget https://raw.githubusercontent.com
 cd ~/.config/waypaper/ && rm config.ini && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/waypaper/config.ini
 
 # Kitty
-cd ~/.config/kitty/ && rm kitty.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/kitty.conf
+cd ~/.config/kitty/ && rm kitty.conf && sleep 1
+cd ~/.config/kitty/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/kitty.conf
 
 # Fish
 cd ~/.config/fish/ && rm config.fish && sleep 1
