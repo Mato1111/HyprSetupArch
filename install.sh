@@ -90,11 +90,15 @@ chsh -s $(which fish)
 ########################
 
 # Wallpaper Selector
-mkdir ~/Downloads/WPSInstall/ && sleep 4
+mkdir ~/Downloads/WPSInstall/ && sleep 5
 cd ~/Downloads/WPSInstall/ && wget https://raw.githubusercontent.com/Mato1111/WallpaperEngine-Waypaper-Selector/main/add-to-apps.sh & wget https://raw.githubusercontent.com/Mato1111/WallpaperEngine-Waypaper-Selector/main/install.sh
+sleep 2
 bash ~/Downloads/WPSInstall/install.sh
+sleep 2
 bash ~/Downloads/WPSInstall/add-to-apps.sh
-cd ~/.config/WallpaperSelect/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/WallpaperSelect/wallpaper.txt
+sleep 2
+cd ~/.config/WallpaperSelect/ && rm wallpaper.txt && sleep 1.5 && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/WallpaperSelect/wallpaper.txt
+sleep 2
 rm -rf ~/Downloads/WPSInstall/
 
 
