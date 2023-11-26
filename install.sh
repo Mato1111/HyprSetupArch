@@ -22,7 +22,7 @@ yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin fis
 # Configs
 
 # Run then kill the main programs to gen the ~/.config/folders and configs (No idea if this is actually needed)
-Hyprland & waypaper & kvantummanager & qt5ct & dunst & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & kitty --override close_on_child_death=on fish & kitty & 
+Hyprland & waypaper & kvantummanager & qt5ct & qt6ct & nwg-look & dunst & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & kitty --override close_on_child_death=on fish & kitty & 
 sleep 3.5
 killall Hyprland waypaper kvantummanager qt5ct waybar btop micro dunst kitty 
 
@@ -93,5 +93,6 @@ bash ~/Downloads/WPSInstall/add-to-apps.sh
 cd ~/.config/WallpaperSelect/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/WallpaperSelect/wallpaper.txt
 rm -rf ~/Downloads/WPSInstall/
 
+
 echo "
-Install complete. Please apply themes from Plasma and add ttf-jetbrains-mono-nerd to the ignore list."
+Install complete. Please apply themes from Plasma with qt5ct, qt6ct, nwg-look, kvantum, and KDE settings. Add ttf-jetbrains-mono-nerd to the ignore list."
