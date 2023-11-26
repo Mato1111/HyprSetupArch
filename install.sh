@@ -15,7 +15,7 @@ yay -R xdg-desktop-portal-kde xdg-desktop-portal-wlr xdg-desktop-portal-dde xdg-
 ########################
 
 # Install packages
-yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin fish starship wget kitty kbd micro waybar dunst ttf-font-awesome ttf-jetbrains-mono-nerd fuzzel wlogout copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
+yay -S hyprland-git xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin fish starship wget kitty kbd micro waybar dunst ttf-font-awesome ttf-jetbrains-mono-nerd-3.0.2-1 fuzzel wlogout copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
 
 ########################
 
@@ -93,4 +93,5 @@ bash ~/Downloads/WPSInstall/add-to-apps.sh
 cd ~/.config/WallpaperSelect/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/WallpaperSelect/wallpaper.txt
 rm -rf ~/Downloads/WPSInstall/
 
-echo "Install complete. You may now login to Hyprland."
+echo "
+Install complete. Please apply themes from Plasma and add ttf-jetbrains-mono-nerd to the ignore list."
