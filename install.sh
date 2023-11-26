@@ -31,6 +31,7 @@ killall Hyprland waypaper kvantummanager qt5ct qt6ct nwg-look waybar btop micro 
 mkdir ~/.config/system_scripts/
 mkdir ~/.config/waybar/
 mkdir ~/.config/micro/colorschemes/
+mkdir ~/.config/btop/
 
 # Waybar/Spotify Script
 cd ~/.config/system_scripts/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/system_scripts/mediaplayer.py
@@ -67,7 +68,7 @@ cd ~/.config/dunst/ && rm dunstrc && sleep 1
 cd ~/.config/dunst/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/dunstrc
 
 # btop
-cd ~/.config/btop/ && rm btop.conf && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/btop.conf
+cd ~/.config/btop/ && rm btop.conf && sleep 1 && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/btop.conf
 
 # Micro
 cd ~/.config/micro/colorschemes/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/Theme/micro/monokaiBlur.micro
