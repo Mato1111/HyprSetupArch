@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 # Wallpapers
-rsync -r --del ~/Pictures/Wallpapers /HDD1/HyprSetupArch/Wallpapers/
+rsync -r --del --inplace -U -u ~/Pictures/Wallpapers /HDD1/HyprSetupArch/Wallpapers/
 sleep 2
-zip -FS /HDD1/HyprSetupArch/Wallpapers/wallpapers978543.zip /HDD1/HyprSetupArch/Wallpapers/Wallpapers/*
+zip -0 -FS /HDD1/HyprSetupArch/Wallpapers/wallpapers978543.zip /HDD1/HyprSetupArch/Wallpapers/Wallpapers/*
 sleep 2
 
 # Configs
