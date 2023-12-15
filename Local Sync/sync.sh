@@ -23,3 +23,6 @@ rsync ~/.config/dunst/dunstrc /HDD1/HyprSetupArch/top/dunstrc
 
 # Commit and Push
 cd /HDD1/HyprSetupArch/ && git commit -m "sync" -a && git push
+
+# Reduce local file size
+cd /HDD1/HyprSetupArch/ && git repack -a -d
