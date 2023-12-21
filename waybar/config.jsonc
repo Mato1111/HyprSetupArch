@@ -48,7 +48,7 @@
 	},
     "clock": {
         "format": "{: %I:%M %p  %m/%d/%Y}",
-        "on-click": "xdg-open 'https://calendar.google.com/calendar/u/0/r/month' &",
+        "on-click": "xdg-open 'https://calendar.proton.me/u/0/' &",
         "on-click-right": "killall merkuro-calendar"
     },
     "cpu": {
