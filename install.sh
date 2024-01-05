@@ -15,7 +15,7 @@ yay -R xdg-desktop-portal-kde xdg-desktop-portal-wlr xdg-desktop-portal-dde xdg-
 ########################
 
 # Install packages
-yay -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin playerctl fish starship wget kitty kbd micro hyprshot waybar dunst ttf-font-awesome ttf-jetbrains-mono-nerd fuzzel wlogout copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper-git swaybg polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
+yay -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin playerctl fish starship wget kitty kbd micro hyprshot waybar dunst ttf-font-awesome ttf-jetbrains-mono-nerd fuzzel wlogout copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper-git swww polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
 
 ########################
 
