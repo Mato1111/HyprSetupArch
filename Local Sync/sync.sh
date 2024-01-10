@@ -6,7 +6,7 @@ rsync -r --del --inplace -U -u ~/Pictures/Wallpapers /HDD1/HyprSetupArch/Wallpap
 sleep 0.5
 zip -0 -FS /HDD1/HyprSetupArch/Wallpapers/wallpapers978543.zip /HDD1/HyprSetupArch/Wallpapers/Wallpapers/*
 # Configs
-rsync -r --del --inplace -U -u -p ~/.config/ /HDD1/.config/
+rsync -r --del --inplace -U -u -p ~/.config/ /HDD1/.config/ &
 rsync ~/.config/hypr/hyprland.conf /HDD1/HyprSetupArch/hypr/hyprland.conf &
 rsync ~/.config/WallpaperSelect/wallpaper.txt /HDD1/HyprSetupArch/WallpaperSelect/wallpaper.txt &
 rsync ~/.config/qt5ct/qt5ct.conf /HDD1/HyprSetupArch/Theme/qt5ct/qt5ct.conf &
@@ -19,9 +19,9 @@ rsync ~/.config/kitty/kitty.conf /HDD1/HyprSetupArch/top/kitty.conf &
 rsync ~/.config/kitty/current-theme.conf /HDD1/HyprSetupArch/top/current-theme.conf&
 rsync ~/.config/starship.toml /HDD1/HyprSetupArch/top/starship.toml &
 rsync ~/.config/fish/config.fish /HDD1/HyprSetupArch/top/config.fish &
-rsync ~/.config/dunst/dunstrc /HDD1/HyprSetupArch/top/dunstrc
-rsync ~/.config/rofi/config.rasi /HDD1/HyprSetupArch/rofi/config.rasi
-rsync ~/.config/rofi/Monokai-copy.rasi /HDD1/HyprSetupArch/rofi/Monokai-copy.rasi
+rsync ~/.config/dunst/dunstrc /HDD1/HyprSetupArch/top/dunstrc &
+rsync ~/.config/rofi/config.rasi /HDD1/HyprSetupArch/rofi/config.rasi &
+rsync ~/.config/rofi/Monokai-copy.rasi /HDD1/HyprSetupArch/rofi/Monokai-copy.rasi 
 
 # Commit and Push
 cd /HDD1/HyprSetupArch/ && git commit -m "sync" -a && git push
