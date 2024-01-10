@@ -70,7 +70,8 @@ cd ~/.config/dunst/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetup
 
 # rofi
 cd ~/.config/rofi/ && rm config.rasi && sleep 1
-cd ~/.config/rofi/ && wget 
+cd ~/.config/rofi/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/rofi/Monokai-copy.rasi
+cd ~/.config/rofi/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/rofi/config.rasi
 
 # btop
 cd ~/.config/btop/ && rm btop.conf && sleep 1 && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/btop.conf
