@@ -11,7 +11,7 @@ configuration {
     background:                  #161320aa;
     foreground:                  #e1cdf2ff;
     lightbg:                     #161320ff;
-    lightfg:                     #e1cdf2ee;
+    lightfg:                     #e1cdf2ff;
     red:                         rgba ( 220, 50, 47, 100 % );
     selected-active-foreground:  var(background);
     separatorcolor:              var(foreground);
@@ -23,7 +23,7 @@ configuration {
     selected-urgent-background:  var(red);
     alternate-active-background: var(lightbg);
     spacing:                     3;
-    blue:                        #e1cdf2ff;
+    blue:                        #e1cdf2aa;
     alternate-normal-foreground: var(foreground);
     urgent-background:           var(background);
     selected-normal-foreground:  var(lightbg);
@@ -31,7 +31,7 @@ configuration {
     selected-active-background:  var(blue);
     active-background:           var(background);
     selected-normal-background:  var(lightfg);
-    alternate-normal-background: var(lightbg);
+    alternate-normal-background: #161320aa;
     selected-urgent-foreground:  var(background);
     normal-foreground:           var(foreground);
     alternate-urgent-foreground: var(red);
