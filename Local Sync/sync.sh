@@ -20,6 +20,8 @@ rsync ~/.config/kitty/current-theme.conf /HDD1/HyprSetupArch/top/current-theme.c
 rsync ~/.config/starship.toml /HDD1/HyprSetupArch/top/starship.toml &
 rsync ~/.config/fish/config.fish /HDD1/HyprSetupArch/top/config.fish &
 rsync ~/.config/dunst/dunstrc /HDD1/HyprSetupArch/top/dunstrc
+rsync ~/.config/rofi/config.rasi /HDD1/HyprSetupArch/rofi/config.rasi
+rsync ~/.config/rofi/Monokai-copy.rasi /HDD1/HyprSetupArch/rofi/Monokai-copy.rasi
 
 # Commit and Push
 cd /HDD1/HyprSetupArch/ && git commit -m "sync" -a && git push

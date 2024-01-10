@@ -15,16 +15,16 @@ yay -R xdg-desktop-portal-kde xdg-desktop-portal-wlr xdg-desktop-portal-dde xdg-
 ########################
 
 # Install packages
-yay -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin playerctl fish starship wget kitty kbd micro hyprshot waybar dunst ttf-font-awesome ttf-jetbrains-mono-nerd fuzzel wlogout copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper-git swww polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
+yay -S hyprland xdg-desktop-portal xdg-desktop-portal-hyprland kio-admin playerctl rofi fish starship wget kitty kbd micro hyprshot waybar dunst ttf-font-awesome ttf-jetbrains-mono-nerd fuzzel wlogout copyq btop nvtop python python-pyqt5 ffmpeg linux-wallpaperengine-git waypaper-git swww polkit-kde-agent qt5ct kvantum layan-gtk-theme-git kora-icon-theme --noconfirm
 
 ########################
 
 # Configs
 
 # Run then kill the main programs to gen the ~/.config/folders and configs (No idea if this is actually needed)
-Hyprland & waypaper & kvantummanager & qt5ct & qt6ct & nwg-look & dunst & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & kitty --override close_on_child_death=on fish & kitty & 
+Hyprland & rofi -show drun & waypaper & kvantummanager & qt5ct & qt6ct & nwg-look & dunst & kitty --override close_on_child_death=on btop & kitty --override close_on_child_death=on micro & kitty --override close_on_child_death=on fish & kitty & 
 sleep 3.5
-killall Hyprland waypaper kvantummanager qt5ct qt6ct nwg-look waybar btop micro dunst kitty 
+killall Hyprland waypaper kvantummanager qt5ct qt6ct nwg-look waybar btop micro dunst kitty rofi
 
 
 # Make dirs
@@ -32,6 +32,7 @@ mkdir ~/.config/system_scripts/
 mkdir ~/.config/waybar/
 mkdir ~/.config/micro/colorschemes/
 mkdir ~/.config/btop/
+mkdir ~/.config/rofi/
 
 # Waybar/Spotify Script
 cd ~/.config/system_scripts/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/system_scripts/mediaplayer.py
