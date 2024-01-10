@@ -68,6 +68,10 @@ cd ~/.config/waybar/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetu
 cd ~/.config/dunst/ && rm dunstrc && sleep 1
 cd ~/.config/dunst/ && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/dunstrc
 
+# rofi
+cd ~/.config/rofi/ && rm config.rasi && sleep 1
+cd ~/.config/rofi/ && wget 
+
 # btop
 cd ~/.config/btop/ && rm btop.conf && sleep 1 && wget https://raw.githubusercontent.com/Mato1111/HyprSetupArch/main/top/btop.conf
 
