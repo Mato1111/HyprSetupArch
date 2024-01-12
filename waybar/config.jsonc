@@ -77,7 +77,7 @@
     },
     "custom/launcher":{
         "format": " ",
-        "on-click": "fuzzel --icon-theme=kora --background=161320dd --text-color=e1cdf2ff --selection-color=3c3175ff --selection-text-color=e1cdf2ff -D no --border-color=e1cdf2ff --border-width=2 --match-color=ab73dbff --selection-match-color=ab73dbff", 
+        "on-click": "rofi -show drun", 
         "on-click-right": "wlogout"
     },
     "hyprland/window": {
