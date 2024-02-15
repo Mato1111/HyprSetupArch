@@ -1,8 +1,6 @@
 #!/bin/bash
 # -*- coding: utf-8 -*-
 
-@echo off
-
 rsync -r --del --inplace -U -u -p ~/.config/ /HDD1/.config/ &
 rsync -r --del --inplace -U -u ~/Pictures/Wallpapers /HDD1/HyprSetupArch/Wallpapers/
 rsync -r --del --inplace -U -u -p ~/.local/share/PrismLauncher /HDD1/.local/
