@@ -4,6 +4,9 @@
 #[character]
 #success_symbol = "[->](bold green)"
 
+#format = '''
+#[╭──>](bold green)$directory$rust$package
+#[╰>](bold green) '''
 format = '''
-[╭──>](bold green)$directory$rust$package
-[╰>](bold green) '''
+[@ ](bold green)$directory$rust$package
+[>>>](bold green) '''
