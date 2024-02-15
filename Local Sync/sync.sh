@@ -30,6 +30,7 @@ yay -Q > /HDD1/installed.txt
 yay -Qe > /HDD1/installed-explicit.txt
 
 # Commit and Push
+cd /HDD1/HyprSetupArch/Wallpapers/Wallpapers/ && git add .
 cd /HDD1/HyprSetupArch/ && git commit -m "sync" -a
 sleep 3 && git push
 
