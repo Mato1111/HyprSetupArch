@@ -1,13 +1,10 @@
 #!/bin/bash
 # -*- coding: utf-8 -*-
 
-# Wallpapers
-rsync -r --del --inplace -U -u ~/Pictures/Wallpapers /HDD1/HyprSetupArch/Wallpapers/
-sleep 0.5
-# zip -0 -FS /HDD1/HyprSetupArch/Wallpapers/wallpapers978543.zip /HDD1/HyprSetupArch/Wallpapers/Wallpapers/*
+echo off
 
-# Configs
-rsync -r --del --inplace -U -u -p ~/.config/ /HDD1/.config/
+rsync -r --del --inplace -U -u -p ~/.config/ /HDD1/.config/ &
+rsync -r --del --inplace -U -u ~/Pictures/Wallpapers /HDD1/HyprSetupArch/Wallpapers/
 rsync -r --del --inplace -U -u -p ~/.local/share/PrismLauncher /HDD1/.local/
 rsync -r --del --inplace -U -u -p ~/.local/share/plasma /HDD1/.local/
 rsync ~/.config/hypr/hyprland.conf /HDD1/HyprSetupArch/hypr/hyprland.conf
@@ -29,10 +26,8 @@ rsync ~/.config/rofi/Monokai-copy.rasi /HDD1/HyprSetupArch/rofi/Monokai-copy.ras
 yay -Q > /HDD1/installed.txt
 yay -Qe > /HDD1/installed-explicit.txt
 
-# Commit and Push
 cd /HDD1/HyprSetupArch/Wallpapers/Wallpapers/ && git add .
 cd /HDD1/HyprSetupArch/ && git commit -m "sync" -a
 sleep 3 && git push
 
-# Reduce local file size
 cd /HDD1/HyprSetupArch/ && git repack -a -d
