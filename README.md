@@ -1,10 +1,8 @@
 # HyprSetup for Arch
 
-Run `install.sh` to install a full Hyprland setup.
+Do not use the `install.sh` scirpt. it isn't updated to work with the chages ive made recently and won't be updated to work. I also use sway now, not Hyprland.
 
-[Wallpaper archive](https://drive.proton.me/urls/WZWDGXTG7W#9ChfjISvDomi) Last Updated 2/15/2024
-
-## Other useful flags:<b>
+## Useful flags:<b>
 
 `--enable-blink-features=MiddleClickAutoscroll`<b>
 
